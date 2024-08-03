@@ -163,6 +163,6 @@ function clearfield() {
   document.getElementById('s-name').value = "";
   document.getElementById('s-mail').value = "";
   document.getElementById('s-msg').value = "";
-  },10000);
+  },5000);
 
 }
