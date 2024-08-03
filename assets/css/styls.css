@@ -345,6 +345,11 @@
   
   .sidebar.active { max-height: 430px; }
   
+  .contact-info a{
+    font-size: 5px;
+    color: white;
+  }
+
   .sidebar-info {
     position: relative;
     display: flex;
@@ -424,18 +429,19 @@
     opacity: 1;
     visibility: visible;
   }
-  
+
+
   .contacts-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 15px;
   }
   
   .contact-item {
     min-width: 100%;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 15px;
   }
   
   .contact-info {
@@ -1417,10 +1423,14 @@
   
     .info_more-btn ion-icon { display: none; }
   
-    .separator { margin: 32px 0; }
+    .separator { 
+      margin: 32px 0; 
+    }
   
-    .contacts-list { gap: 20px; }
-  
+    .contacts-list {
+      gap: 15px;
+    }
+
     .contact-info {
       max-width: calc(100% - 64px);
       width: calc(100% - 64px);
@@ -1628,7 +1638,7 @@
   
     .contacts-list {
       grid-template-columns: 1fr 1fr;
-      gap: 30px 15px;
+      gap: 30px 55px;
     }
   
   
@@ -1709,6 +1719,7 @@
   /**
    * responsive larger than 1024px screen
    */
+
   
   @media (min-width: 1024px) {
   
@@ -1777,7 +1788,6 @@
     }
   
     .navbar-link { font-weight: var(--fw-500); }
-  
   
   
     /**
@@ -1912,7 +1922,10 @@
       visibility: visible;
     }
   
-    .contacts-list { grid-template-columns: 1fr; }
+    .contacts-list { 
+      grid-template-columns: 1fr; 
+  
+    }
   
     .contact-info :is(.contact-link) {
       white-space: nowrap;
@@ -2057,6 +2070,7 @@
   .randomfact .col-5 {
     order: 2; /* Text below on mobile */
   }
+
 }
 
 /* Additional Styles */
