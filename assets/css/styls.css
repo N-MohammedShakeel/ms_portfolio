@@ -888,8 +888,8 @@
   /**
    * skills 
    */
-  
-  .skills-title { margin-bottom: 20px;  }
+  /* temporarily not used */
+  /* .skills-title { margin-bottom: 20px;  }
   
   .skills-list { padding: 20px; }
   
@@ -924,7 +924,7 @@
     background: var(--text-gradient-yellow);
     height: 100%;
     border-radius: inherit;
-  }
+  } */
   
   
   
