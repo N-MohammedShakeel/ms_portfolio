@@ -1277,7 +1277,7 @@
   .form-btn:hover::before { background:rgb(32, 134, 100); }
   
   /* To disable the contact button */
-  /* .form-btn:disabled {
+   .form-btn:disabled {
     opacity: 0.7;
     cursor: not-allowed;
   }
@@ -1286,7 +1286,7 @@
   
   .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
   
-   */
+  
   
   
   
