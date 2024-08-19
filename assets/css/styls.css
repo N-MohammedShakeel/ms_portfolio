@@ -3,7 +3,9 @@
 \*-----------------------------------*/
 
 
-
+/*-----------------------------------*\
+  #Pre Loader
+\*-----------------------------------*/
 
 
 
@@ -501,7 +503,6 @@
     left: 0;
     width: 100%;
     background: hsla(173, 16%, 58%, 0.75);
-    backdrop-filter: blur(10px);
     border: 1px solid var(--jet);
     border-radius: 12px 12px 0 0;
     box-shadow: var(--shadow-2);

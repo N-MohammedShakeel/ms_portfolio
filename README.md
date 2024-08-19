@@ -1,7 +1,7 @@
 # Welcome to My Portfolio!
 
 Explore my projects and skills in software development, showcasing my passion for technology and innovation.
-https://shakeel00111.github.io/ms_portfolio/
+https://n-mohammedshakeel.github.io/ms_portfolio
 
 ## About Me
 
