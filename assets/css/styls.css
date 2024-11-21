@@ -2294,6 +2294,11 @@
   .navbar-link .navbar-text {
      display: none !important;   
   }
+
+
+  .documentation {
+    padding-top: 15px;  
+  }
 }
 
 
