@@ -2260,3 +2260,54 @@
   clip-path: inset(50%);
   overflow: hidden;
 }
+
+
+/*  styling: Show text, hide icons on larger screens */
+/* Issue the navigation bar in homescreen taking too much space So , introducing the icons for mobile sizes*/
+.navbar-link ion-icon {
+  display: none;
+}
+
+.navbar-link .navbar-text {
+  display: inline;
+}
+
+@media (max-width: 422px) {
+  .navbar-link {
+     padding: 8px;               
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .navbar-link ion-icon {
+     display: inline !important;  
+     font-size: 20px;            
+     color: var(--light-gray);   
+  }
+
+  .navbar-link .navbar-text {
+     display: none !important;   
+  }
+}
+
+
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;                 
+}
+
+.navbar-item {
+  flex: 1;                       
+  text-align: center;
+}
+
+
+.navbar-link ion-icon:hover {
+  color: rgb(31, 134, 100);       
+  transform: scale(1.2);          
+  transition: transform 0.2s ease;
+}

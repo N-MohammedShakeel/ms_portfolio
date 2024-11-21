@@ -15,6 +15,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css">
+
 </head>
 
 <body>
@@ -166,30 +168,48 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+             <button class="navbar-link active" data-nav-link aria-label="About">
+                <ion-icon name="person-outline"></ion-icon>
+                <span class="navbar-text">About</span>
+             </button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Education</button>
+             <button class="navbar-link" data-nav-link aria-label="Education">
+                <ion-icon name="school-outline"></ion-icon>
+                <span class="navbar-text">Education</span>
+             </button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
+             <button class="navbar-link" data-nav-link aria-label="Projects">
+                <ion-icon name="briefcase-outline"></ion-icon>
+                <span class="navbar-text">Projects</span>
+             </button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+             <button class="navbar-link" data-nav-link aria-label="Blog">
+                <ion-icon name="create-outline"></ion-icon>
+                <span class="navbar-text">Blog</span>
+             </button>
           </li>
-          
+
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Documentaion</button>
+             <button class="navbar-link" data-nav-link aria-label="Documentation">
+                <ion-icon name="document-outline"></ion-icon>
+                <span class="navbar-text">Documentation</span>
+             </button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+             <button class="navbar-link" data-nav-link aria-label="Contact">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span class="navbar-text">Contact</span>
+             </button>
           </li>
-
-        </ul>
+       </ul>
+       
 
       </nav>
 
@@ -708,7 +728,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="Projects">
+      <article class="portfolio" data-page="projects">
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
@@ -992,7 +1012,7 @@
         - #Documentaion
       -->
 
-      <article class="documentation" data-page="documentaion">
+      <article class="documentation" data-page="documentation">
 
         <header>
           <h2 class="h2 article-title">My Documents</h2>

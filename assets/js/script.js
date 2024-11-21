@@ -135,27 +135,31 @@ for (const element of formInputs) {
 
 
 
-// page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (const element of navigationLinks) {
-  element.addEventListener("click", function () {
+// Function to handle navigation and make the clicked link active
+navigationLinks.forEach((link) => {
+   link.addEventListener("click", function () {
+      const pageName = link.getAttribute("aria-label").toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page.toLowerCase()) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
+      // Show the clicked page and set the link as active
+      pages.forEach((page) => {
+         if (page.dataset.page === pageName) {
+            page.classList.add("active");
+         } else {
+            page.classList.remove("active");
+         }
+      });
 
-  });
-}
+      // Remove "active" class from all links, then add to the clicked link
+      navigationLinks.forEach((navLink) => navLink.classList.remove("active"));
+      link.classList.add("active");
+
+      // Scroll to the top of the page
+      window.scrollTo(0, 0);
+   });
+});
 
 
 //Clearing Info after clicking submit in contact form
@@ -168,3 +172,6 @@ function clearfield() {
   },5000);
 
 }
+
+
+
