@@ -2189,6 +2189,11 @@
     order: 2; /* Text below on mobile */
   }
 
+
+  .documentation {
+    padding-top: 30px;  
+  }
+
 }
 
 /* Additional Styles */
