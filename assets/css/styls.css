@@ -520,10 +520,12 @@
   .navbar-link {
     color: var(--light-gray);
     font-size: 12px;
-    padding: 20px 7px;
-  
+    padding: 20px 3px;
     transition: color var(--transition-1);
   }
+
+
+
   
   .navbar-link:hover { color:  rgb(31, 134, 100); }
   .navbar-link:focus { color: rgb(17, 17, 17); }
@@ -1205,7 +1207,7 @@
   .documentation-posts { margin-bottom: 10px; }
 
   .documentation {
-    padding-top: 80px;  
+    padding-top: 30px;  
   }
   
   
