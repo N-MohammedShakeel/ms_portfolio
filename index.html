@@ -1,497 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MS Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MS Portfolio</title>
+    <link
+      rel="icon"
+      href="./assets/images/ms-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/ms-removebg-preview.png"
+      type="image/x-icon"
+    />
 
-  <link rel="icon" href="./assets/images/ms-removebg-preview.png" type="image/x-icon">
-  <link rel="shortcut icon" href="./assets/images/ms-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styls.css" />
 
-  <link rel="stylesheet" href="./assets/css/styls.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css">
-
-</head>
-
-<body>
-
-
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/Screenshot 2023-09-09 141659-modified.png"
+              alt="Richard hanrick"
+              width="110"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Mohammed Shakeel .N</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/Screenshot 2023-09-09 141659-modified.png" alt="Richard hanrick" width="110">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Mohammed Shakeel .N</h1>
-
-          <div class="info-content sidebar-profession ">
-           <p class="title">Android Developer</p>
-           <p class="title">UI/UX Designer</p>
-           <p class="title">Full-Stack Developer</p>
+            <div class="info-content sidebar-profession">
+              <p class="title">Android Developer</p>
+              <p class="title">UI/UX Designer</p>
+              <p class="title">Full-Stack Developer</p>
+            </div>
           </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a
+                  href="mailto:nmohammedshakeel22@gmail.com"
+                  class="contact-link"
+                  >nmohammedshakeel22@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+919840987714" class="contact-link"
+                  >+91 9840987714</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:nmohammedshakeel22@gmail.com" class="contact-link">nmohammedshakeel22@gmail.com</a>
-            </div>
+                <time datetime="1982-06-23">December 23, 2004</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Chennai, TamilNadu, India</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+919840987714" class="contact-link">+91 9840987714</a>
-            </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/N-MohammedShakeel"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-          </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/nmdshakeel"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-          <li class="contact-item">
+            <li class="social-item">
+              <a href="https://www.instagram.com/ms_aj07" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">December 23, 2004</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Chennai, TamilNadu, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/N-MohammedShakeel" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/nmdshakeel" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/ms_aj07" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-             <button class="navbar-link active" data-nav-link aria-label="About">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button
+                class="navbar-link active"
+                data-nav-link
+                aria-label="About"
+              >
                 <ion-icon name="person-outline"></ion-icon>
                 <span class="navbar-text">About</span>
-             </button>
-          </li>
+              </button>
+            </li>
 
-          <li class="navbar-item">
-             <button class="navbar-link" data-nav-link aria-label="Education">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link aria-label="Education">
                 <ion-icon name="school-outline"></ion-icon>
                 <span class="navbar-text">Education</span>
-             </button>
-          </li>
+              </button>
+            </li>
 
-          <li class="navbar-item">
-             <button class="navbar-link" data-nav-link aria-label="Projects">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link aria-label="Projects">
                 <ion-icon name="briefcase-outline"></ion-icon>
                 <span class="navbar-text">Projects</span>
-             </button>
-          </li>
+              </button>
+            </li>
 
-          <li class="navbar-item">
-             <button class="navbar-link" data-nav-link aria-label="Blog">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link aria-label="Blog">
                 <ion-icon name="create-outline"></ion-icon>
                 <span class="navbar-text">Blog</span>
-             </button>
-          </li>
+              </button>
+            </li>
 
-          <li class="navbar-item">
-             <button class="navbar-link" data-nav-link aria-label="Documentation">
+            <li class="navbar-item">
+              <button
+                class="navbar-link"
+                data-nav-link
+                aria-label="Documentation"
+              >
                 <ion-icon name="document-outline"></ion-icon>
                 <span class="navbar-text">Documentation</span>
-             </button>
-          </li>
+              </button>
+            </li>
 
-          <li class="navbar-item">
-             <button class="navbar-link" data-nav-link aria-label="Contact">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link aria-label="Contact">
                 <ion-icon name="mail-outline"></ion-icon>
                 <span class="navbar-text">Contact</span>
-             </button>
-          </li>
-       </ul>
-       
+              </button>
+            </li>
+          </ul>
+        </nav>
 
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm Mohammed Shakeel, an aspiring Android developer and software
+              engineer with a keen interest in web development. I am passionate
+              about creating innovative mobile applications and web solutions
+              that are both functional and aesthetically pleasing. I specialize
+              in transforming complex requirements into sleek, user-friendly
+              applications that provide an exceptional user experience.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I'm Mohammed Shakeel, an aspiring Android developer and software engineer with a keen interest in web development. 
-            I am passionate about creating innovative mobile applications and web solutions that are both functional and aesthetically pleasing. 
-            I specialize in transforming complex requirements into sleek, user-friendly applications that provide an exceptional user experience.
-          </p>
+            <p>
+              In my role as a developer, I focus on building Android
+              applications that are not only efficient but also engaging and
+              visually appealing. Additionally, I have experience in web
+              development, where I create websites that are both attractive and
+              easy to navigate. I bring a personal touch to each project,
+              ensuring that it captures the user's attention and delivers a
+              seamless experience.
+            </p>
 
-          <p>
-            In my role as a developer, I focus on building Android applications that are not only efficient but also engaging and visually appealing. 
-            Additionally, I have experience in web development, where I create websites that are both attractive and easy to navigate. 
-            I bring a personal touch to each project, ensuring that it captures the user's attention and delivers a seamless experience.
-          </p>
+            <p>
+              I aim to convey your vision and identity in the most effective and
+              creative way possible. Throughout my journey, I have developed
+              various Android apps, websites, write blogs and Won Hackathons.
+              Furthermore,I have developed apps and websites that leverage cloud
+              services from AWS, showcasing my expertise in both application and
+              cloud technologies.
+            </p>
+          </section>
 
-          <p>
-            I aim to convey your vision and identity in the most effective and creative way possible. 
-            Throughout my journey, I have developed various Android apps, websites, write blogs and Won Hackathons. 
-            Furthermore,I have developed apps and websites that leverage cloud services from AWS, showcasing my expertise in both application and cloud technologies.
-          </p>
-
-
-        </section>
-
-
-        <!--
+          <!--
           - Quick Background
         -->
 
-        <section id="MyBackground" class="Background">
-
-          <div class="Background-container">
-            <div class="container px-4 py-5" id="featured-3">
-              <h2 class="Background-title pb-2 display-5 fw-bold text-body-emphasis mt-lg-5 mb-0 features1">A Quick Background</h2>
-              <div class="Background-divs">
-                <div class="feature col mt-5">
-                  <h3 class="fs-2 text-body-emphasis features ">I used to be a freelancer.</h3>
-                  <p>After college, I engaged in freelance projects, collaborating with fellow students and external clients, which significantly contributed to the enhancement of my skills and expertise.</p>
-                </div>
-                <div class="feature col mt-5">
-                  <h3 class="fs-2 text-body-emphasis features ">I maintain a blog.</h3>
-                  <p>In my free time, I dedicate my time to crafting insightful blogs on the latest programming trends and emerging technologies, which I publish on <a href="https://hashnode.com/@ms007">Hashnode</a> </p>
-                </div>
-                <div class="feature col mt-5">
-                  <h3 class="fs-2 text-body-emphasis features">I love watching movies.</h3>
-                  <p>I love watching Movies and web Series, particularly drawn to the genres of horror, adventure, romance, and science fiction.</p>
+          <section id="MyBackground" class="Background">
+            <div class="Background-container">
+              <div class="container px-4 py-5" id="featured-3">
+                <h2
+                  class="Background-title pb-2 display-5 fw-bold text-body-emphasis mt-lg-5 mb-0 features1"
+                >
+                  A Quick Background
+                </h2>
+                <div class="Background-divs">
+                  <div class="feature col mt-5">
+                    <h3 class="fs-2 text-body-emphasis features">
+                      I used to be a freelancer.
+                    </h3>
+                    <p>
+                      After college, I engaged in freelance projects,
+                      collaborating with fellow students and external clients,
+                      which significantly contributed to the enhancement of my
+                      skills and expertise.
+                    </p>
+                  </div>
+                  <div class="feature col mt-5">
+                    <h3 class="fs-2 text-body-emphasis features">
+                      I maintain a blog.
+                    </h3>
+                    <p>
+                      In my free time, I dedicate my time to crafting insightful
+                      blogs on the latest programming trends and emerging
+                      technologies, which I publish on
+                      <a href="https://hashnode.com/@ms007">Hashnode</a>
+                    </p>
+                  </div>
+                  <div class="feature col mt-5">
+                    <h3 class="fs-2 text-body-emphasis features">
+                      I love watching movies.
+                    </h3>
+                    <p>
+                      I love watching Movies and web Series, particularly drawn
+                      to the genres of horror, adventure, romance, and science
+                      fiction.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-        </section>
-          
+          </section>
 
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/android-svgrepo-com.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    Professional development of applications for Android.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/android-svgrepo-com.svg" alt="mobile app icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/SoftwareDevelopment.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
 
-                <p class="service-item-text">
-                  Professional development of applications for Android.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    Intermediate level.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/web-development-svgrepo-com (1).svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/SoftwareDevelopment.svg" alt="design icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    High-quality development of sites at the Intermediate level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a Intermediate level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/web-development-svgrepo-com (1).svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the Intermediate level.
-                </p>
-              </div>
-
-            </li>
-
-           
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonals-removebg-preview.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Daniel lewis
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonals-removebg-preview.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Mohammed Shakeel is a highly skilled software developer who consistently delivers high-quality code.
-                     His problem-solving abilities are exceptional, and he always finds efficient solutions to complex technical challenges.
-                     Mohammed's expertise in Android development and web technologies has greatly contributed to the success of our projects.
-                     I highly recommend him for any software development needs.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Mohammed Shakeel is a highly skilled software developer
+                      who consistently delivers high-quality code. His
+                      problem-solving abilities are exceptional, and he always
+                      finds efficient solutions to complex technical challenges.
+                      Mohammed's expertise in Android development and web
+                      technologies has greatly contributed to the success of our
+                      projects. I highly recommend him for any software
+                      development needs.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonals-removebg-preview.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jessica miller
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonals-removebg-preview.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I have had the pleasure of working with Mohammed Shakeel on several projects, and he has proven to be an incredibly reliable and committed developer. 
-                    His dedication to his craft and his willingness to go the extra mile to ensure project success are truly impressive. 
-                    Mohammed's ability to handle both frontend and backend development makes him a valuable asset to any team.
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I have had the pleasure of working with Mohammed Shakeel
+                      on several projects, and he has proven to be an incredibly
+                      reliable and committed developer. His dedication to his
+                      craft and his willingness to go the extra mile to ensure
+                      project success are truly impressive. Mohammed's ability
+                      to handle both frontend and backend development makes him
+                      a valuable asset to any team.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonals-removebg-preview.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Emily evans
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonals-removebg-preview.png"alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Mohammed Shakeel brings a creative flair to his development work that sets him apart.
-                    He has an eye for design and a deep understanding of user experience, which he combines to create innovative and user-friendly applications.
-                    Mohammed's contributions have significantly enhanced our product's appeal and functionality.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Mohammed Shakeel brings a creative flair to his
+                      development work that sets him apart. He has an eye for
+                      design and a deep understanding of user experience, which
+                      he combines to create innovative and user-friendly
+                      applications. Mohammed's contributions have significantly
+                      enhanced our product's appeal and functionality.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonals-removebg-preview.png"
+                      alt="Henry william"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Henry william
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonals-removebg-preview.png"alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Mohammed Shakeel's adaptability and commitment to continuous learning are remarkable. 
-                    He stays updated with the latest technologies and industry trends, which he applies to his development work. 
-                    Mohammed's ability to quickly learn and implement new tools and frameworks has been invaluable to our projects.
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Mohammed Shakeel's adaptability and commitment to
+                      continuous learning are remarkable. He stays updated with
+                      the latest technologies and industry trends, which he
+                      applies to his development work. Mohammed's ability to
+                      quickly learn and implement new tools and frameworks has
+                      been invaluable to our projects.
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+                <span class="sr-only">Close</span>
+              </button>
 
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn >
-              <ion-icon name="close-outline"></ion-icon>
-              <span class="sr-only">Close</span>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -537,12 +604,11 @@
 
         </section> -->
 
-      
           <!--
           - Random facts
           -->
-          
-           <section id="facts" class="light nopad-b">
+
+          <section id="facts" class="light nopad-b">
             <div class="container randomfact">
               <div class="row Rrow alt">
                 <div class="col-7 ten-things">
@@ -555,110 +621,99 @@
                     <li>I'm a bit of a clean freak</li>
                     <li>I love to travel</li>
                     <li>I want to live in Mecca</li>
-                    <li>I'm slightly addicted to <a href="https://www.instagram.com/ms_aj07/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li>
+                      I'm slightly addicted to
+                      <a
+                        href="https://www.instagram.com/ms_aj07/"
+                        target="_blank"
+                        rel="noopener"
+                        >Instagram</a
+                      >
+                    </li>
                   </ul>
                 </div>
                 <div id="img-1" class="col-5 align-c">
-                  <img class="major" src="./assets/images/alien-removebg-preview.png" alt="Alien">
+                  <img
+                    class="major"
+                    src="./assets/images/alien-removebg-preview.png"
+                    alt="Alien"
+                  />
                 </div>
               </div>
             </div>
           </section>
-          
-      </article>
+        </article>
 
-
-
-
-
-      <!--
+        <!--
         - #Education
       -->
 
-      <article class="education" data-page="education">
+        <article class="education" data-page="education">
+          <header>
+            <h2 class="h2 article-title">Education</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Education</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Panimalar Engineering College
+                </h4>
 
-          <ol class="timeline-list">
+                <p class="timeline-text">
+                  Computer Science and Business System
+                </p>
+                <span>2022 — 2026</span>
+                <p class="timeline-text">Grade: 8.6/10 CGPA (as of sem 4)</p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  St.Mary's-Anglo-Indian-Higher-Secondary-School
+                </h4>
 
-              <h4 class="h4 timeline-item-title">Panimalar Engineering College</h4>
+                <p class="timeline-text">Bio-Maths (Class - 12)</p>
+                <span>2021 — 2022</span>
 
-              <p class="timeline-text">
-                Computer Science and Business System
-              </p>
-              <span>2022 — 2026</span>
-              <p class="timeline-text">
-                Grade: 8.6/10 CGPA (as of sem 4)
-              </p>
+                <p class="timeline-text">Grade: 80.33 %</p>
+              </li>
+            </ol>
+          </section>
 
-            </li>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">St.Mary's-Anglo-Indian-Higher-Secondary-School</h4>
-             
-              <p class="timeline-text">
-                Bio-Maths (Class - 12)
-              </p>
-              <span>2021 — 2022</span>
-
-              <p class="timeline-text">
-                Grade: 80.33 %
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Self-Learning</h4>
 
-          <ol class="timeline-list">
+                <span>2023 - PRESENT</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  As a self-taught software developer, I’ve developed Android
+                  apps and web projects through online courses. My practical
+                  experience and continuous learning showcase my dedication and
+                  skills in technology.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <h4 class="h4 timeline-item-title">Self-Learning</h4>
-
-              <span>2023 - PRESENT</span>
-
-              <p class="timeline-text">
-                As a self-taught software developer, 
-                I’ve developed Android apps and web projects through online courses. 
-                My practical experience and continuous learning showcase my dedication and skills in technology.
-
-              </p>
-
-            </li>
-
-
-          </ol>
-
-        </section>
-
-        <!-- <section class="skill">
+          <!-- <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -719,118 +774,116 @@
           </ul>
 
         </section> -->
+        </article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="projects">
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Android Dev</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web dev</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web designs</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Website Clones</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Programming Languages</button>
-            </li>
-
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Android Dev</button>
-              </li>
-              
-              <li class="select-item">
-                <button data-select-item>Web Dev</button>
+              <li class="filter-item">
+                <button data-filter-btn>Android Dev</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web designs</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web dev</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Website Clones</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web designs</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Programming Languages</button>
+              <li class="filter-item">
+                <button data-filter-btn>Website Clones</button>
               </li>
 
+              <li class="filter-item">
+                <button data-filter-btn>Programming Languages</button>
+              </li>
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <li class="project-item  active" data-filter-item data-category="web dev">
-              <ul href="#">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <a href="https://github.com/N-MohammedShakeel/Llama-3.1-8B-AI-Assistant"> <ion-icon name="logo-github"></ion-icon></a>
-                    <a href="https://n-mohammedshakeel.github.io/Llama-3.1-8B-AI-Assistant/"><ion-icon name="eye-outline"></ion-icon></a>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>Android Dev</button>
+                </li>
 
-                  <img src="./assets/images/Llama-Ai.webp" alt="Llama-Chat" loading="lazy">
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Web Dev</button>
+                </li>
 
-                <h3 class="project-title">Llama Chat Application</h3>
+                <li class="select-item">
+                  <button data-select-item>Web designs</button>
+                </li>
 
-                <p class="project-category">Web Dev</p>
+                <li class="select-item">
+                  <button data-select-item>Website Clones</button>
+                </li>
 
+                <li class="select-item">
+                  <button data-select-item>Programming Languages</button>
+                </li>
               </ul>
-            </li>
+            </div>
 
-            <!-- 
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web dev"
+              >
+                <ul href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <a
+                        href="https://github.com/N-MohammedShakeel/Llama-3.1-8B-AI-Assistant"
+                      >
+                        <ion-icon name="logo-github"></ion-icon
+                      ></a>
+                      <a
+                        href="https://n-mohammedshakeel.github.io/Llama-3.1-8B-AI-Assistant/"
+                        ><ion-icon name="eye-outline"></ion-icon
+                      ></a>
+                    </div>
+
+                    <img
+                      src="./assets/images/Llama-Ai.webp"
+                      alt="Llama-Chat"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Llama Chat Application</h3>
+
+                  <p class="project-category">Web Dev</p>
+                </ul>
+              </li>
+
+              <!-- 
             <li class="project-item  active" data-filter-item data-category="android dev">
               <ul href="#">
 
@@ -907,322 +960,340 @@
             </li>
              -->
 
-            <li class="project-item  active" data-filter-item data-category="programming languages">
-              <ul href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="programming languages"
+              >
+                <ul href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <a
+                        href="https://github.com/N-MohammedShakeel/java_BASIC_OOPS_DSA_PROJECTS_PROBLEMS"
+                      >
+                        <ion-icon name="logo-github"></ion-icon
+                      ></a>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <a href="https://github.com/N-MohammedShakeel/java_BASIC_OOPS_DSA_PROJECTS_PROBLEMS"> <ion-icon name="logo-github"></ion-icon></a>
-                  </div>
+                    <img
+                      src="./assets/images/javadesign.png"
+                      alt="java"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/javadesign.png" alt="java" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Java Repo</h3>
 
-                <h3 class="project-title">Java Repo</h3>
+                  <p class="project-category">Programming Languages</p>
+                </ul>
+              </li>
 
-                <p class="project-category">Programming Languages</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="programming languages"
+              >
+                <ul href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <a href="https://github.com/N-MohammedShakeel/Python">
+                        <ion-icon name="logo-github"></ion-icon
+                      ></a>
+                    </div>
 
-              </ul>
-            </li>
+                    <img
+                      src="./assets/images/pythondesign.webp"
+                      alt="python"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            
-            <li class="project-item  active" data-filter-item data-category="programming languages">
-              <ul href="#">
+                  <h3 class="project-title">Python Repo</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <a href="https://github.com/N-MohammedShakeel/Python"> <ion-icon name="logo-github"></ion-icon></a>
-                  </div>
+                  <p class="project-category">Programming Languages</p>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <img src="./assets/images/pythondesign.webp" alt="python" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Python Repo</h3>
-
-                <p class="project-category">Programming Languages</p>
-
-              </ul>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="https://master-java.hashnode.dev/">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/Blog-1.png"
+                      alt="Java Logo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Programming</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item">
-              <a href="https://master-java.hashnode.dev/">
+                      <time datetime="2024-11-1">1-11-2024</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Blog-1.png" alt="Java Logo" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-title">Java</h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Programming</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-11-1">1-11-2024</time>
+                    <p class="blog-text">
+                      Explore the fundamentals and advanced concepts of Java
+                      programming through clear explanations, practical
+                      examples, and coding best practices.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Java</h3>
+              <li class="blog-post-item">
+                <a href="https://master-android.hashnode.dev/">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/Blog-2.jpg"
+                      alt="Android Logo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Explore the fundamentals and advanced concepts of Java programming through clear explanations, practical examples, and coding best practices. 
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Development</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2024-11-28">28-11-2024</time>
+                    </div>
 
+                    <h3 class="h3 blog-item-title">Android</h3>
 
-
-
-
-            <li class="blog-post-item">
-              <a href="https://master-android.hashnode.dev/">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Blog-2.jpg" alt="Android Logo" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Development</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-11-28">28-11-2024</time>
+                    <p class="blog-text">
+                      Learn the essential components of Android apps, including
+                      Activities, Fragments, permissions, UI handling, and
+                      lifecycle management, laying the groundwork for advanced
+                      development.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Android</h3>
+              <li class="blog-post-item">
+                <a href="https://master-python.hashnode.dev/">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/Blog-3.webp"
+                      alt="Python Logo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Learn the essential components of Android apps, including Activities, Fragments, permissions, UI handling, and lifecycle management, laying the groundwork for advanced development.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Programming</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2024-11-28">28-11-2024</time>
+                    </div>
 
+                    <h3 class="h3 blog-item-title">Python</h3>
 
-
-
-
-
-            <li class="blog-post-item">
-              <a href="https://master-python.hashnode.dev/">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Blog-3.webp" alt="Python Logo" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Programming</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-11-28">28-11-2024</time>
+                    <p class="blog-text">
+                      This blog offers a roadmap to master Python, from basics
+                      to advanced topics, including web development and data
+                      science.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Python</h3>
+              <li class="blog-post-item">
+                <a href="https://master-webdevelopment.hashnode.dev/">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/Blog-4.jpg"
+                      alt="Android Logo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    This blog offers a roadmap to master Python, from basics to advanced topics, including web development and data science.                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Development</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2024-12-15">15-12-2024</time>
+                    </div>
 
+                    <h3 class="h3 blog-item-title">Web Development</h3>
 
-
-
-            <li class="blog-post-item">
-              <a href="https://master-webdevelopment.hashnode.dev/">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/Blog-4.jpg" alt="Android Logo" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Development</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-12-15">15-12-2024</time>
+                    <p class="blog-text">
+                      Discover tips, tutorials, and projects in full-stack web
+                      development, covering front-end, back-end, and databases.
+                      Learn technologies like HTML, CSS, JavaScript, Node.js,
+                      and more to build dynamic web applications!
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">Web Development</h3>
-
-                  <p class="blog-text">
-                    Discover tips, tutorials, and projects in full-stack web development, covering front-end, back-end, and databases. Learn technologies like HTML, CSS, JavaScript, Node.js, and more to build dynamic web applications!</p>
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-
-
-       <!--
+        <!--
         - #Documentaion
       -->
 
-      <article class="documentation" data-page="documentation">
+        <article class="documentation" data-page="documentation">
+          <header>
+            <h2 class="h2 article-title">My Documents</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">My Documents</h2>
-        </header>
+          <section class="documentation-posts">
+            <ul class="documentation-posts-list">
+              <li class="documentation-post-item">
+                <a
+                  href="https://ms-tmdb.hashnode.space/tmdbclientapp-guide/project-introduction"
+                >
+                  <figure class="documentation-banner-box">
+                    <img
+                      src="./assets/images/Document-1.png"
+                      alt="Documentation of TMDB client"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="documentation-posts">
+                  <div class="documentation-content">
+                    <div class="documentation-meta">
+                      <p class="documentation-category">Android Development</p>
 
-          <ul class="documentation-posts-list">
+                      <span class="dot"></span>
 
-            <li class="documentation-post-item">
-              <a href="https://ms-tmdb.hashnode.space/tmdbclientapp-guide/project-introduction">
+                      <time datetime="2024-11-16">16-11-2024</time>
+                    </div>
 
-                <figure class="documentation-banner-box">
-                  <img src="./assets/images/Document-1.png" alt="Documentation of TMDB client" loading="lazy">
-                </figure>
+                    <h3 class="h3 documentation-item-title">TMDB Client App</h3>
 
-                <div class="documentation-content">
-
-                  <div class="documentation-meta">
-                    <p class="documentation-category">Android Development</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-11-16">16-11-2024</time>
+                    <p class="documentation-text">
+                      TMDB client app fetches popular movies, TV shows, and
+                      artists, <br />
+                      stores them locally, and lets users update the data as
+                      needed.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 documentation-item-title">TMDB Client App</h3>
-
-                  <p class="documentation-text">
-                    TMDB client app fetches popular movies, TV shows, and artists, <br>
-                    stores them locally, and lets users update the data as needed.</p>
-
-                </div>
-
-              </a>
-            </li>
-
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d971.4910757139344!2d80.28906826955509!3d13.101447999201628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA2JzA1LjIiTiA4MMKwMTcnMjMuMCJF!5e0!3m2!1sen!2sin!4v1722682975518!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d971.4910757139344!2d80.28906826955509!3d13.101447999201628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA2JzA1LjIiTiA4MMKwMTcnMjMuMCJF!5e0!3m2!1sen!2sin!4v1722682975518!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form
+              action="https://formsubmit.co/nmohammedshakeel22@gmail.com"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  id="s-name"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  id="s-mail"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="https://formsubmit.co/nmohammedshakeel22@gmail.com" method="POST" class="form" data-form>
+              <textarea
+                name="msg"
+                class="form-input"
+                id="s-msg"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="name" class="form-input" id="s-name" placeholder="Full name" required data-form-input>
+              <button
+                class="form-btn"
+                type="submit"
+                onclick="clearfield()"
+                disabled
+                data-form-btn
+              >
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" id="s-mail" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="msg" class="form-input" id="s-msg" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" onclick="clearfield()" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
