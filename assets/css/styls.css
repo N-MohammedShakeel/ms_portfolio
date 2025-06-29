@@ -2429,3 +2429,145 @@ textarea.form-input::-webkit-resizer {
     overflow-y: auto;
   }
 }
+
+/*-----------------------------------*\
+  #SERVICE-ANIMATIONS
+\*-----------------------------------*/
+
+article.active .service {
+  margin-bottom: 35px;
+  opacity: 0; /* Initial state for animation */
+  transform: translateY(80px); /* More pronounced slide for visibility */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; /* Optimize performance */
+  animation: fadeInSlideUpFallback 0.8s ease-out forwards 0.5s; /* Fallback */
+}
+
+article.active .service.animate {
+  opacity: 1;
+  transform: translateY(0);
+  animation: none; /* Disable fallback when JS applies animate */
+}
+
+@keyframes fadeInSlideUpFallback {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+article.active .service-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  opacity: 0; /* Initial state for staggered animation */
+  transform: translateY(80px); /* Match section slide distance */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
+  animation: fadeInSlideUpFallback 0.6s ease-out forwards; /* Fallback */
+}
+
+/* Staggered transitions for each service item */
+article.active .service-item.animate:nth-child(1) {
+  transition-delay: 0.2s;
+  animation-delay: 0.7s;
+}
+article.active .service-item.animate:nth-child(2) {
+  transition-delay: 0.4s;
+  animation-delay: 0.9s;
+}
+article.active .service-item.animate:nth-child(3) {
+  transition-delay: 0.6s;
+  animation-delay: 1.1s;
+}
+article.active .service-item.animate:nth-child(4) {
+  transition-delay: 0.8s;
+  animation-delay: 1.3s;
+}
+article.active .service-item.animate:nth-child(5) {
+  transition-delay: 1s;
+  animation-delay: 1.5s;
+}
+
+article.active .service-item:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  transition: transform var(--transition-1);
+}
+
+article.active .service-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--text-black);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.service-icon-box {
+  margin-bottom: 10px;
+  transition: transform var(--transition-1);
+}
+
+.service-icon-box:hover {
+  transform: translateY(-5px); /* Bounce effect on hover */
+}
+
+.service-icon-box img {
+  margin: auto;
+}
+
+.service-content-box {
+  text-align: center;
+}
+
+.service-item-title {
+  color: var(--text-white);
+  margin-bottom: 7px;
+}
+
+.service-item-text {
+  color: var(--text-white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (min-width: 580px) {
+  article.active .service-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+
+  .service-icon-box {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .service-content-box {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+}

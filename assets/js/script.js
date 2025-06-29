@@ -221,10 +221,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => {
       console.error("Error fetching GitHub events:", error);
-      // Fallback insight remains as is
+      githubInsight.innerHTML = `
+        <strong>Insight:</strong> Active contributor with recent commits across multiple repositories!
+      `;
     });
 
-  // Flip Card Functionality
+  // Flip Card Functionality (only one card open at a time)
   const flipCards = document.querySelectorAll(".flip-card");
   if (flipCards.length === 0) {
     console.warn(
@@ -234,7 +236,59 @@ document.addEventListener("DOMContentLoaded", () => {
   flipCards.forEach((card) => {
     card.addEventListener("click", () => {
       console.log("Flip card clicked:", card);
+      flipCards.forEach((otherCard) => {
+        if (otherCard !== card) {
+          otherCard.classList.remove("flipped");
+        }
+      });
       card.classList.toggle("flipped");
     });
   });
+
+  // Project Grid Dynamic Row Span
+  const projectItems = document.querySelectorAll(".project-item");
+  if (projectItems.length === 0) {
+    console.warn(
+      "No project items found. Check if '.project-item' elements exist in the DOM."
+    );
+  }
+  projectItems.forEach((item) => {
+    const height = item.offsetHeight;
+    const rowSpan = Math.ceil(height / 10); // Matches grid-auto-rows: 10px
+    item.style.gridRow = `span ${rowSpan}`;
+  });
+
+  // Service Section Animation
+  const serviceSection = document.querySelector(
+    "article[data-page='about'] .service"
+  );
+  const serviceItems = document.querySelectorAll(
+    "article[data-page='about'] .service-item"
+  );
+
+  if (!serviceSection) {
+    console.warn(
+      "Service section not found. Check if 'article[data-page=\"about\"] .service' exists in the DOM."
+    );
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("Service section is in view, applying animations");
+          serviceSection.classList.add("animate");
+          serviceItems.forEach((item) => item.classList.add("animate"));
+          observer.unobserve(serviceSection); // Stop observing after animation
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Trigger when 10% of section is visible
+      rootMargin: "0px 0px -100px 0px", // Trigger earlier for better visibility
+    }
+  );
+
+  observer.observe(serviceSection);
 });
